@@ -99,15 +99,15 @@ namespace tempConverter
 
             return;
         }
-        private static void convertTemp(double intNumToConvert)
+        private static void convertTemp(double dbleNumToConvert)
         {
             double celsius = 0;
             double fahrenheit = 0;
 
             try
             {
-                fahrenheit = (intNumToConvert * 9 / 5) + 32;
-                celsius = (intNumToConvert - 32) * 5 / 9;
+                fahrenheit = (dbleNumToConvert * 9 / 5) + 32;
+                celsius = (dbleNumToConvert - 32) * 5 / 9;
             }
             catch (ArithmeticException e)
             {
@@ -130,8 +130,8 @@ namespace tempConverter
 
                 else
                 {
-                    Console.WriteLine(intNumToConvert + " degrees celsius converted to fahrenheit is " + fahrenheit);
-                    Console.WriteLine(intNumToConvert + " degrees fahrenheit converted to celsius is " + celsius);
+                    Console.WriteLine(dbleNumToConvert + " degrees celsius converted to fahrenheit is " + fahrenheit);
+                    Console.WriteLine(dbleNumToConvert + " degrees fahrenheit converted to celsius is " + celsius);
                 }
             }
 
